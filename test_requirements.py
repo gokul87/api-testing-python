@@ -13,6 +13,7 @@ def test_get_booking():
 def test_get_specific_booking():
     response = specific_booking(1, 'application/json')
     assert response.status_code == 200
+    print(response.url)
 
 
 def test_get_returns_418_with_bad_heading():
